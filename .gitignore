@@ -2,4 +2,8 @@
 **/TODO.txt
 **/temp.txt
 **/tmp.txt
+**/.terraform.lock.hcl
+**/.terraform.tfstate.lock.info
+**/.terraform/
+**/terraform.tfstate*
 Site/user.env

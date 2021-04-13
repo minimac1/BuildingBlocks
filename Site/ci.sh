@@ -10,5 +10,6 @@ echo "Extracting config to ENV from user.env"
 source user.env
 set +a
 
-script_path="scripts/${1}.sh"
-exec "${script_path}"
+script_path="scripts/commands/${1}.sh"
+shift
+exec "${script_path}" "${@}"
