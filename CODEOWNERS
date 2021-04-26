@@ -4,3 +4,5 @@
 ## 
 
 /config/prod*/app/*/auto-test.txt @minimac1
+
+/config/** @minimac1
