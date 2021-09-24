@@ -6,10 +6,13 @@ if [[ -f "/user.env" ]]; then
 fi
 
 set -a
-echo "Extracting config to ENV from user.env"
+echo "Extracting aws config to ENV from user.env"
 source user.env
 set +a
 
 script_path="scripts/commands/${1}.sh"
+export base_app_path="$(pwd)"
 shift
+pwd
+
 exec "${script_path}" "${@}"
